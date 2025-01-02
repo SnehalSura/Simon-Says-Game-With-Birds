@@ -1,12 +1,12 @@
 body {
     text-align: center;
-    background-image: url(tulips.jpg);
+    background-image: url(./all_images/tulips.jpg);
     background-size: cover;
     
 }
 
 .changeBackground{
-    background-image: url(over.webp);
+    background-image: url(./all_images/over.webp);
     background-size: cover;
 }
 
@@ -15,9 +15,7 @@ body {
         top: 10px;
         right: 40px;
 }
-/* h1,h2{
-    color: white;
-} */
+
 
 .btn-container {
     display: flex;
@@ -34,36 +32,34 @@ body {
 
 .cream {
     /* background-color: #FFF5E0; */
-    background-image: url(newBird1.jpg);
+    background-image: url(./all_images/newBird1.jpg);
     background-size: cover;
 }
 
 .pink {
     /* background-color: #FB9AD1; */
-    background-image: url(redBird.webp);
+    background-image: url(./all_images/redBird.webp);
     background-size: cover;
 }
 
 .tomato{
     /* background-color: rgb(209, 86, 86); */
-    background-image: url(newBird4.avif);
+    background-image: url(./all_images/newBird4.avif);
     background-size: cover;
 }
 
 .nevyBlue{
     /* background-color: #18234c; */
-    background-image: url(bird4.jpg);
+    background-image: url(./all_images/bird4.jpg);
     background-size: cover;
 }
 
 .gameflash{
-    /* background-color: yellow; */
-    background-image: url(yellowColor.png);
+    background-image: url(./all_images/yellowColor.png);
     background-size: cover;
 }
 
 .userflash{
-    /* background-color: green; */
-    background-image: url(greenColor.jpg);
+    background-image: url(./all_images/greenColor.jpg);
     background-size: cover;
 }

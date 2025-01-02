@@ -49,7 +49,6 @@ function levelUp() {
     console.log("Random class is:", randColor);      // Just for understanding of blinked button
     gameFlash(reqBtn);                               // Calling the function to blink the specific "random button"
     gameSeq.push(randColor);                      // Pushing the random color flashed by game for tracking the game order
-    console.log("Game Sequence: ", gameSeq);       // for my understanding
 }
 
 function checkAns(indx) {
@@ -60,7 +59,7 @@ function checkAns(indx) {
     }
     else {
         console.log("Game Over!");
-        let score = level -1 ;
+        let score = level - 1 ;
         h2.innerHTML = `<span>Game Over! Your Score was <b>${score}</b> <br> Press any key to start. </span>`;
 
         if (highScore < score){
@@ -88,8 +87,8 @@ function btnPress() {
         let pressedBtn = this;
         userFlash(pressedBtn);
 
-        let userColor = pressedBtn.getAttribute("id");
-        userSeq.push(userColor);
+        let pressed_btn_id = pressedBtn.getAttribute("id");
+        userSeq.push(pressed_btn_id);
 
         checkAns(userSeq.length - 1);          // checking for the last index of the userSeq
 
