@@ -39,7 +39,7 @@ function userFlash(btn) {                   // Executed when user clicks on the 
 }
 
 function levelUp() {
-    userSeq = [];
+    userSeq = [];      // For clearing the previous level's user sequence data
     level++;
     h2.innerText = `Level ${level}`;
     // Choose the random button
@@ -53,23 +53,24 @@ function levelUp() {
 
 function checkAns(indx) {
     if (userSeq[indx] === gameSeq[indx]) {
-        if (userSeq.length == gameSeq.length) {
+        if (userSeq.length == gameSeq.length) {   // Main condition: When the game & user array Length matches, then only next level
             setTimeout(levelUp, 1000);
         }
     }
     else {
         console.log("Game Over!");
-        let score = level - 1 ;
+        let score = level - 1 ;          // Calculate the user's current score
         h2.innerHTML = `<span>Game Over! Your Score was <b>${score}</b> <br> Press any key to start. </span>`;
 
         if (highScore < score){
-            highScore = score;
+            highScore = score;         // Update the high score if the current score is higher
         }
 
         scoreElem.innerText = highScore;
         document.body.classList.add("changeBackground");
         h1.style.color = "white";
         let mySpan = document.querySelector("span");
+
         mySpan.style.backgroundColor = "yellow";
         
         setTimeout(function () {
