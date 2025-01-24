@@ -24,7 +24,7 @@ document.addEventListener("keypress", function () {
 
 });
 
-function gameFlash(btn) {                    // Function executed to flash the button by game itself
+function gameFlash(btn) {                    // Function used to flash the button by game itself
     btn.classList.add("gameflash");
     setTimeout(function () {
         btn.classList.remove("gameflash");
