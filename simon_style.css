@@ -10,11 +10,10 @@ body {
 }
 
 .position{
-        position: fixed;
-        top: 10px;
-        right: 40px;
+    position: fixed;
+    top: 10px;
+    right: 40px;
 }
-
 
 .btn-container {
     display: flex;

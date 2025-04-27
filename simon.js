@@ -59,7 +59,7 @@ function checkAns(indx) {
     }
     else {
         console.log("Game Over!");
-        let score = level - 1 ;          // Calculate the user's current score
+        let score = level - 1 ;          // Calculating the user's current score
         h2.innerHTML = `<span>Game Over! Your Score was <b>${score}</b> <br> Press any key to start. </span>`;
 
         if (highScore < score){
